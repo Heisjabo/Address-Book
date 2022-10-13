@@ -1,0 +1,82 @@
+*{
+    background-color: rgb(17, 17, 17);
+    color:aliceblue;
+}
+.container{
+    margin: 50px;
+}
+#address-book{
+    color: darkred;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+.search-bar input{
+    
+    margin-left: 500px;
+    margin-top: -50px;
+    padding: 10px;
+    border-color: white;
+}
+.nav-items{
+    margin-top: 20px;
+}
+.nav-items li{
+    list-style-type: none;
+    display: inline;
+
+}
+#addbtn{
+    float: right;
+    margin-top: -70px;
+    padding: 8px 20px;
+    color:white;
+    background-color: darkred;
+    border-radius:;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+#addbtn:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+table{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+    width: 100px;
+   
+}
+table input{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 2px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.contacts-library{
+    margin-left: 30px;
+
+}
+.contacts-library h3{
+    background-color: white;
+    font-size: 26px;
+    color: darkred;
+    margin-left: 12px;
+    margin-top: -10px;
+    width: 100px;
+    padding: 10px;
+    
+}
+.contacts-list{
+    list-style: none;
+    display: block;
+}
+
