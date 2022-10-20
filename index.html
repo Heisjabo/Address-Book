@@ -2,100 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/63e00a6191.js" crossorigin="anonymous"></script>
+    <title>Address Book</title>
 </head>
 <body>
-    
-<div class="container">
-    <div class="nav">
-        <ul class="nav-items">
-            <li><h1 id="address-book">Address Book</h1></li>
-            <li><form class="search-bar">
-                <input type="search-name" class="contact-search" name="search-area" placeholder="Search">
-            </form></li>
-            <li><button id="addbtn"><i class="fa-solid fa-plus"></i>Add</button></li>
-
-        </ul>
-       
-    </div>
-    <div class="form-div">
-    <table class="add-form" id="add-form">
-        <tr>
-    <form class="addContact-form"> 
-        <div class="form-items">
-        <td><label for="fullname">Names:</label></td></tr>
-        <tr>
-        <td><input type="text" id="fullname" placeholder="Enter name"></td></tr>
-    </div>
-    <tr>
-    <div class="form-items">
-        <td><label for="phone">Phone:</label></td></tr>
-     <tr><td>   
-    <input type="text" id="phone"></td>
-    </div>
-</tr>
-
-    <div class="form-items">
-        <tr>
-    <td><label for="address">Address:</label></td></tr>
-    <tr>
-<td><textarea name="address" id="address" cols="25" rows="5"></textarea></td>
-    </div>
-</tr>
-    <div class="form-items">
-        <tr>
-    <td><label for="city">City</label></td></tr>
-<tr>
-<td><input type="text" id="city" ></td>
-    </div>
-</tr>
-    <div class="form-items">
-    <tr>
-    <td><label for="email">Email:</label></td></tr>
-<tr>
-<td><input type="email" id="email" ></td>
-    </div>
-</tr>
-        <br><br>
-    <tr><td><button id="Add">Save contact</button><button id="cancel">Cancel</button></td>
-    </tr>
-    </form>
-</table>
-</div>
-
-    <section class="contacts-library">
-        <span><h3>Contacts</h3></span>
-        <ul class="contacts-list">
-            <li class="contact-item" id="contact-item">
-                <i class="fa-solid fa-user"></i>
-                <p class="contact-name">John Doe</p>
-                <p class="relationship">Friend</p>
-            </li>
-
-            <li class="contact-item" id="contact-item">
-                <i class="fa-solid fa-user"></i>
-                <p class="contact-name">John Doe</p>
-                <p class="relationship">Friend</p>
-            </li>
-
-            <li class="contact-item" id="contact-item">
-                <i class="fa-solid fa-user"></i>
-                <p class="contact-name">John Doe</p>
-                <p class="relationship">Friend</p>
-            </li>
-        </ul>
-    </section>
-
-    
-
-</div><!--container-->
-
-    
+    <header>
+        <h1>Address-Book</h1>
+    </header>
+    <main>
+        <section id="contact-display">
+            <h2 class="contacts">Contacts</h2>
+            <table>
+                <tr id="head">
+                    <thead>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Email</th>        
+                    </thead>
+                </tr>
+                <tbody id="data">
+                    
+                </tbody>
+            </table>
+        </section>
+        <section id="new-contact">
+            <h2>New contact</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" type="text"  maxlength="16" required>
+                </div>
+                <div>
+                    <label for="add">Address:</label>
+                    <input id="add" type="text" maxlength="30" required>
+                </div>
+                <div>
+                    <label for="tel">Phone:</label>
+                    <input id="tel" type="number" maxlength="15" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" maxlength="30" required>
+                </div>
+                <div>
+                    <button>save contact</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
 </body>
 </html>

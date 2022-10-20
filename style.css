@@ -1,82 +1,117 @@
-*{
-    background-color: rgb(17, 17, 17);
-    color:aliceblue;
-}
-.container{
-    margin: 50px;
-}
-#address-book{
-    color: darkred;
+html,body{
     font-family: sans-serif;
-    font-weight: bold;
-
 }
-.search-bar input{
+body{
+    margin: 0px auto;
+    background: black;
+    color: white;
     
-    margin-left: 500px;
-    margin-top: -50px;
-    padding: 10px;
-    border-color: white;
 }
-.nav-items{
-    margin-top: 20px;
+h1{
+    text-align: center;
+    color: aliceblue;
 }
-.nav-items li{
-    list-style-type: none;
-    display: inline;
-
-}
-#addbtn{
-    float: right;
-    margin-top: -70px;
-    padding: 8px 20px;
-    color:white;
-    background-color: darkred;
-    border-radius:;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+th{
+    color: white;
     border: none;
+    padding: 10px 60px;
+    margin: 0;
 }
-#addbtn:hover{
-    background-color: white;
-    color: black;
-    border: 3px solid black;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-table{
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -10px;
-    width: 100px;
-   
-}
-table input{
-    margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 2px solid red;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-}
-.contacts-library{
-    margin-left: 30px;
+td{
+    border: none;
+    padding: 6px 5px;
+    color: aliceblue;
 
 }
-.contacts-library h3{
-    background-color: white;
-    font-size: 26px;
-    color: darkred;
-    margin-left: 12px;
-    margin-top: -10px;
-    width: 100px;
-    padding: 10px;
+
+thead{
+    background: none;
+    line-height: 20px;
+}
+
+ #contact-display {
+    margin-left: 40px;
+    width: 300px;
+    background: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#new-contact {
     
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    
+    background: #161616;
+    border-radius: 15px;
 }
-.contacts-list{
-    list-style: none;
-    display: block;
+#new-contact button{
+    border: none;
+    outline: none;
+    background: blue;
+    color: aliceblue;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 80px;
+
+}
+#new-contact button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+#new-contact form label{
+
+    color: aliceblue;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .4s;
+}
+#new-contact input:focus ~ label,
+#new-contact input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: green;
+    font-size: 12px;
 }
 
+#new-contact input{
+    color: aliceblue;
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+  #new-contact form{
+    position: relative;
+    height: 300px;
+  }
+
+  #new-contact h2{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+div {
+    margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+}
